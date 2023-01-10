@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ArrayComponent } from './array/array.component';
+import { UiComponent } from './ui/ui.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArrayComponent
+    ArrayComponent,
+    UiComponent
   ],
   imports: [
     BrowserModule
