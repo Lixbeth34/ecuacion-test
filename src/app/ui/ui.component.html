@@ -1,0 +1,51 @@
+<h3>Ecuación: y = ax+b</h3><br>
+<form> 
+    <div class="row">
+
+        <div class="col-xs-2">
+            <label for="number">x[0]</label>
+            <input id="primer" [(ngModel)]="arrayx[0]" type="number" 
+            class="form-control primer" name="primer" placeholder="x[0]"/>
+        </div>
+        <div class="col-xs-2">
+            <label for="number">x[1] </label>
+            <input id="segundo" [(ngModel)]="arrayx[1]" type="number" 
+            class="form-control segundo" name="segundo" placeholder="x[1]"/>    
+        </div>
+        <div class="col-xs-2">
+                <label for="number">x[2] </label>
+                <input id="tercer" [(ngModel)]="arrayx[2]" type="number" 
+                class="form-control tercer" name="tercer" placeholder="x[2]"/>
+        </div>
+        <div class="col-xs-2">
+            <label for="number">x[3]</label>
+            <input id="cuarto" [(ngModel)]="arrayx[3]" type="number" 
+            class="form-control cuarto" name="cuarto" placeholder="x[3]"/>
+        </div>
+    </div><br>
+
+    <div class="row">
+        <div class="col-xs-2">
+            <label for="number">a</label>
+            <input [(ngModel)]="vala" type="number" 
+            class="form-control" name="vala" placeholder="a"/>   
+        </div> 
+        <div class="col-xs-2">
+            <label for="number">b</label>
+            <input [(ngModel)]="valb" type="number" 
+            class="form-control" name="valb" placeholder="b"/>
+        </div><br>
+    </div><br>
+    <button type="button"  
+        class="button" 
+        id="cuenta-button"
+        name="cuenta-button" (click)="btnres()">resultado
+    </button>
+
+</form>
+<div class="col">
+    <section>
+      <div class="card text-center">
+        <div class="card-body"> <br><br>
+          <span class="result" >{{ show }}</span>
+</div>
